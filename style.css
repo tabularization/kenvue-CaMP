@@ -269,6 +269,29 @@ a {
     width: 800px;
 }
 
+@media(max-width: 480px) {
+    .case-study {
+        font-size: 1.6rem;
+
+    }
+    .case-study-image {
+        flex-direction: column;
+    }
+
+    #reverse {
+        flex-direction: column-reverse;
+    }
+
+    .case-study-image p {
+        width: 300px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .case-study-image img {
+        width: 300px;
+    }
+}
 
 /* my project */
 .my-projects {
@@ -292,6 +315,8 @@ a {
 
 .project-cell-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5rem;
 }
 
@@ -300,6 +325,7 @@ a {
     border-radius: 0.8rem;
     background-color: #001e1d;
     transition: all 0.3s ease-in;
+    width: 400px;
 }
 
 .project-cell p {
@@ -307,42 +333,41 @@ a {
     font-size: 1.5rem;
 }
 
-.project-cell img {
-    width: 400px;
-}
-
-
-/* project */
-
 .project-cell:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: translateY(-5px);
 }
 
-@media(max-width: 1024px) {
-    .my-portfolio {
-        font-size: 1.6rem;
+@media(max-width: 1280px) {
+    .project-cell-container {
+        width: 1000px;
+        gap: 2rem;
     }
 
-    .project-item {
-        width: 220px;
-        height: 160px;
-    }  
+    .project-cell img {
+        width: 300px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .my-projects {
+        font-size: 1.6rem;
+    }
 }
 
 @media(max-width: 480px) {
-    .my-portfolio {
+    .my-projects {
         font-size: 1.6rem;
+        height: auto;
+        padding-bottom: 3rem;
     }
 
-    .projects {
+    .project-cell-container {
         flex-direction: column;
     }
-
-    .project-item {
-        width: 350px;
-        height: 230px;
-    }  
+    .projects {
+        flex-direction: column;
+    } 
 }
 
   /* footer */
@@ -362,6 +387,7 @@ a {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 svg {
     fill: #fffffe;
 }
