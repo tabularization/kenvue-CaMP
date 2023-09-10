@@ -124,6 +124,7 @@ a {
     margin: 5rem 0;
     font-weight: 400;
     color: #abd1c6;
+    height: 85vh;
 }
 
 .about-me-container{
@@ -180,7 +181,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #abd1c6;
-    padding: 4rem 0;
+    height: 80vh;
     
 }
 
@@ -244,6 +245,7 @@ a {
     font-size: 2rem;
     color: #e8e4e6;
     padding: 4rem;
+    justify-content: center;
     text-align: center;
 }
 
@@ -256,73 +258,65 @@ a {
     display:flex; 
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
-.case-study img {
-    width: 33%;
+.case-study-image img {
+    width: 400px;
+}
+
+.case-study-image p {
+    width: 800px;
 }
 
 
-/* my portfolio */
+/* my project */
+.my-projects {
+    height: 80vh;
+    background-color: #abd1c6;
+    font-size: 2rem;
+}
 
-.my-portfolio {
+.project-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    background-color: #abd1c6;
-    padding: 5rem;
+    color: #fffffe;
+}
+
+.project-container h2{
+    margin: 4rem 0 6rem 0;
     color: #001e1d;
 }
 
-.portfolio-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-}
-
-.projects {
+.project-cell-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5rem;
 }
 
-.project-item-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-cell {
+    padding: 5rem;
+    border-radius: 0.8rem;
+    background-color: #001e1d;
+    transition: all 0.3s ease-in;
 }
 
-.project-item {
-    width: 450px;
-    height: 320px;
-    border-radius: 2rem;
-    box-shadow: #0000002e 0px 2px 4px;
-    margin: 0 1rem;
-    transition: 1s;
+.project-cell p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
+
+.project-cell img {
+    width: 400px;
+}
+
 
 /* project */
 
-.project-item:hover {
-    box-shadow: #26394d 0px 20px 30px -10px;
-}
-
-.text-overlay {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease;
-    font-weight: 800;
-}
-
-.text-overlay p {
-    color: #fffffe;
-    text-shadow: -1px -1px 0px black;
-}
-
-.project-item-container:hover .text-overlay{
-    opacity: 1;
+.project-cell:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px);
 }
 
 @media(max-width: 1024px) {
@@ -359,13 +353,17 @@ a {
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
-    background-color: #f0f0ef;
+    background-color: #004643;
     font-size: 1.5rem;
+    color: #fffffe;
 }
 
 .footer-title {
     text-align: center;
     margin-bottom: 2rem;
+}
+svg {
+    fill: #fffffe;
 }
 
 .links svg {

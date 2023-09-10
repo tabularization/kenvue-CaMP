@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Use the targetId to find the corresponding element
         const targetElement = document.querySelector(targetId);
         
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start", inline:"nearest"});
       });
     });
   });
