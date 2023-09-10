@@ -139,16 +139,16 @@ a {
 
 @media(max-width: 1024px) {
     .about-me-container{
-        font-size: 1.2rem;
-        max-width: 100vw;
+        font-size: 1.7rem;
+        width: 80vw;
     }
 
     .about-me h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .about-me img {
-        width: 20%
+        width: 400px;
     }
 }
 
@@ -295,7 +295,7 @@ a {
 
 /* my project */
 .my-projects {
-    height: 80vh;
+    height: 90vh;
     background-color: #abd1c6;
     font-size: 2rem;
 }
@@ -305,11 +305,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     color: #fffffe;
 }
 
 .project-container h2{
-    margin: 4rem 0 6rem 0;
+    margin: 4rem 0 8rem 0;
     color: #001e1d;
 }
 
@@ -325,7 +326,7 @@ a {
     border-radius: 0.8rem;
     background-color: #001e1d;
     transition: all 0.3s ease-in;
-    width: 400px;
+    width: 450px;
 }
 
 .project-cell p {
@@ -340,7 +341,6 @@ a {
 
 @media(max-width: 1280px) {
     .project-cell-container {
-        width: 1000px;
         gap: 2rem;
     }
 
@@ -352,6 +352,14 @@ a {
 @media(max-width: 1024px) {
     .my-projects {
         font-size: 1.6rem;
+    }
+    
+    .project-cell {
+        width: 300px;
+    }
+
+    .project-cell img {
+        width: 250px;
     }
 }
 
@@ -365,9 +373,10 @@ a {
     .project-cell-container {
         flex-direction: column;
     }
-    .projects {
-        flex-direction: column;
-    } 
+
+    .project-cell img {
+        width: 200px;
+    }
 }
 
   /* footer */
@@ -445,3 +454,4 @@ svg {
       transition: all 1s;
     }
   }
+
