@@ -374,6 +374,10 @@ a {
         flex-direction: column;
     }
 
+    .project-cell {
+        width: 280px;
+    }
+
     .project-cell img {
         width: 200px;
     }
