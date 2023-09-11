@@ -330,6 +330,10 @@ a {
     width: 450px;
 }
 
+.project-cell img {
+    width: 480px;
+}
+
 .project-cell p {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -338,6 +342,20 @@ a {
 .project-cell:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: translateY(-5px);
+}
+
+@media(max-width: 1536px) {
+    .project-cell-container {
+        gap: 2rem;
+    }
+
+    .project-cell {
+        width: 400px;
+        height: 400px;
+    }
+    .project-cell img {
+        width: 300px;
+    }
 }
 
 @media(max-width: 1280px) {
